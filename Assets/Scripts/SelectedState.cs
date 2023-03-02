@@ -13,7 +13,7 @@ public class SelectedState : MonoBehaviour
     {
         audioSource = gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
         audioSource.clip = audioClip;
-        materialDefault = GetComponent<MeshRenderer>().material;
+        materialDefault = gameObject.GetComponent<MeshRenderer>().material;
     }
 
     public void playAudio()
