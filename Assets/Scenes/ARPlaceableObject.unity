@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 119652410}
   - component: {fileID: 119652409}
   m_Layer: 0
-  m_Name: Directional Light (1)
+  m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -721,6 +721,7 @@ GameObject:
   - component: {fileID: 1607432209}
   - component: {fileID: 1607432212}
   - component: {fileID: 1607432211}
+  - component: {fileID: 1607432213}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -845,3 +846,16 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!114 &1607432213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607432202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ba0c8ed182aa84985937b3930fd930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPlaneColour: {r: 0.03137255, g: 0.79607844, b: 0.90588236, a: 1}
