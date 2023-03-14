@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ARImageTrackingTRS.unity
     guid: 6de3fbf026df79d478dc27430dee4757
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARPlaceableObject.unity
     guid: b901abc2c6e07544d9bb11b6b0adea18
   m_configObjects:

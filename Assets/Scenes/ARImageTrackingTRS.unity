@@ -702,10 +702,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PrefabsList:
   - imageGuid: a3bbf269-5a63-426f-837b-f151279df3f6
-    imagePrefab: {fileID: 4241823202570938713, guid: b44ebddf984cc544eb0eb5a22e546a5d,
+    imagePrefab: {fileID: 7771113998887393716, guid: 4983ddad9ca984748ae766d2fe4680af,
       type: 3}
   - imageGuid: 3c23369c-9f65-4a50-a49b-765de19ac316
-    imagePrefab: {fileID: 4241823202570938713, guid: 26557ec1f15211e499ef27c31fd28b9e,
+    imagePrefab: {fileID: 7771113998887393716, guid: 5549a35139e6f384d97ed5682e9f0b50,
       type: 3}
   m_ImageLibrary: {fileID: 11400000, guid: f9a9d884715ccf14ca8a30fd36912e7c, type: 2}
 --- !u!114 &1118611617
