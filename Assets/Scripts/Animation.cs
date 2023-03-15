@@ -5,13 +5,20 @@ using UnityEngine;
 public class Animation : MonoBehaviour
 {
     public List<Texture> frames = new List<Texture>();
-    private Texture firstframe;
+    private Texture firstFrame;
+    private int frameCount;
     // Start is called before the first frame update
     void Start()
     {
-        firstframe = gameObject.GetComponent<MeshRenderer>().material.GetTexture("_MainTex");
+        firstFrame = gameObject.GetComponent<MeshRenderer>().material.GetTexture("Walk cycle000");
+        frameCount = 0;
     }
 
+    public IEnumerator animationDelay()
+    {
+
+        yield return null;
+    }
     // Update is called once per frame
     void Update()
     {
