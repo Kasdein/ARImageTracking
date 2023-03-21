@@ -10,6 +10,9 @@ public class Animation : MonoBehaviour
     public Material myMaterial;
     public float lengthOfFrame = 0.0417f;
     public float timeSinceLastFrame;
+    public bool onLoop;
+    public bool loopOnce;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,11 +25,16 @@ public class Animation : MonoBehaviour
     {
         timeSinceLastFrame += Time.deltaTime;
 
-        if (timeSinceLastFrame >= lengthOfFrame)
+        if (timeSinceLastFrame >= lengthOfFrame && onLoop)
         {
             NextFrame();
             timeSinceLastFrame = 0;
         }
+    }
+
+    public void LoopEnabled()
+    {
+        onLoop = true;
     }
 
     void NextFrame()
@@ -38,6 +46,10 @@ public class Animation : MonoBehaviour
         else
         {
             frameCount = 0;
+            if (loopOnce == true)
+            {
+                onLoop = false;
+            }
         }
 
         myMaterial.SetTexture("_MainTex", frames[frameCount]);
